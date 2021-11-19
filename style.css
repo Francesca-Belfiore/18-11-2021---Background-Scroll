@@ -17,6 +17,7 @@ body {
     background-repeat: repeat-x;
     background-position: top left;
     transition: all 5s ease;
+    position: relative;
 }
 
 .buttons {
@@ -42,8 +43,9 @@ body {
     background-position-x: 300px;
 
     position: absolute;
-    top: 250px;
-    left: 280px;
+    top: 150px;
+    left: 100px;
+    transition: top 1.5s ease, left 1.5s ease;
 }
 
 .movement{

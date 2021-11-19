@@ -9,25 +9,25 @@ const cat = document.querySelector(".cat")
 
 setInterval(() => {cat.classList.toggle('movement')}, 200);
 
-right.addEventListener("click", () =>{
+right.addEventListener(("click"), () =>{
+    cat.style.left = `200px`;
     screen.style.backgroundPositionX = `right`;
 })
 
 left.addEventListener("click", () =>{
+    cat.style.left = `-10px`;
     screen.style.backgroundPositionX = `left`; 
 })
 
-up.addEventListener("click", () =>{
-    cat.style.position = "absolute"; 
-    cat.style.top = "110px"; 
+up.addEventListener("click", () =>{ 
+    cat.style.top = "50px"; 
 })
 
 down.addEventListener("click", () =>{
-    cat.style.position = "absolute"; 
-    cat.style.top = "370px"; 
+    cat.style.top = "300px"; 
 })
 
 center.addEventListener("click", () =>{
-    cat.style.position = "absolute"; 
-    cat.style.top = "250px"; 
+    cat.style.top = "150px";
+    cat.style.left = "100px"; 
 })
